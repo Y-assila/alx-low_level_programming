@@ -1,5 +1,5 @@
+#include "main.h"
 #include <stdio.h>
-
 /**
  * main - Prints the name of the program.
  * @argc: The number of command-line arguments.
@@ -7,9 +7,9 @@
  *
  * Return: Always 0.
  */
-int main(int argc, char *argv[])
+ int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("Program name: %s\n", argv[0]);
-	printf("Number of arguments: %d\n", argc-1);
-	return 0;
+	printf("%s\n", *argv);
+
+	return (0);
 }
